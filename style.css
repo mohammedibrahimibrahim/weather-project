@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;  
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background: url("photo/vin.gif") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: rgb(182, 178, 178);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    max-width: 1000px;
+    margin: 10px;
+    font-size: 27px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#search {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 25px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    box-shadow: 0px 0px 5px grey;
+    max-width: 100%; 
+}
+
+.row button {
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.row button:hover {
+    border: 1px solid rgba(0, 0, 0, 0.359);
+    box-shadow: 0 0 10px 5px whitesmoke;
+}
+
+.row button img {
+    width: 16px;
+}
+
+.basic {
+    height: 70vh;
+    width: 40%;
+    background-color: rgb(48 65 78);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+#float {
+    width: 30%;
+}
+
+@media (max-width: 1200px) {
+    .basic {
+        width: 60%;
+    }
+
+    .row {
+        font-size: 24px;
+    }
+
+    #search {
+        width: 75%;
+    }
+
+    .row button {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 768px) {
+    .basic {
+        width: 80%;
+        height: auto;
+    }
+
+    .row {
+        font-size: 20px;
+    }
+
+    #search {
+        width: 70%;
+    }
+
+    .row button {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .basic {
+        width: 90%;
+        height: auto;
+    }
+
+    .row {
+        font-size: 18px;
+        
+        align-items: center;
+    }
+
+    #search {
+       
+        margin-bottom: 10px;
+        height: 8vh;
+    }
+
+    .row button {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+}
